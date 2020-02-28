@@ -37,7 +37,6 @@ class WeatherDataActivity : AppCompatActivity() {
                 recyclerView.visibility = View.VISIBLE
                 recyclerViewHourly.visibility = View.GONE
                 progressBar.visibility = View.GONE
-                textViewAdd.visibility = View.GONE
                 getWeatherData(binding.root)
                 true
             }
@@ -45,7 +44,6 @@ class WeatherDataActivity : AppCompatActivity() {
                 recyclerView.visibility = View.GONE
                 recyclerViewHourly.visibility = View.VISIBLE
                 progressBar.visibility = View.GONE
-                textViewAdd.visibility = View.GONE
                 getHourlyList()
                 true
             }
@@ -84,11 +82,9 @@ class WeatherDataActivity : AppCompatActivity() {
                 recyclerView.visibility = View.VISIBLE
                 recyclerViewHourly.visibility = View.GONE
                 progressBar.visibility = View.GONE
-                textViewAdd.visibility = View.GONE
                 adapter.updateList(it)
             } else {
                 if (progressBar.visibility != View.VISIBLE) {
-                    textViewAdd.visibility = View.VISIBLE
                     recyclerViewHourly.visibility = View.GONE
                     recyclerView.visibility = View.GONE
                 }
@@ -105,7 +101,6 @@ class WeatherDataActivity : AppCompatActivity() {
             recyclerView.visibility = View.GONE
             recyclerViewHourly.visibility = View.VISIBLE
             progressBar.visibility = View.GONE
-            textViewAdd.visibility = View.GONE
             it.list?.let { it1 -> hourlyAdaptor.updateList(it1) }
         })
     }
