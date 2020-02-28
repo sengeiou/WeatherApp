@@ -51,19 +51,6 @@
                 card_view:layout_constraintStart_toStartOf="@+id/textViewTemp"
                 card_view:layout_constraintTop_toBottomOf="@+id/textViewTemp"
                 tools:text="Date :" />
-
-            <TextView
-                android:id="@+id/textViewMoreDetails"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@{@string/more_details_label}"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                tools:text="More Details" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </layout>
