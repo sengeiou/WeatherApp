@@ -5,11 +5,11 @@
 
     <data>
 
-        <import type="com.test.weatherapplication.utils.DateUtils" />
+        <import type="com.test.weatherassignment.utils.DateUtils" />
 
         <variable
             name="weatherData"
-            type="com.test.weatherapplication.model.WeatherData" />
+            type="com.test.weatherassignment.model.WeatherData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

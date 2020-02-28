@@ -5,12 +5,12 @@
 
     <data>
 
-        <import type="com.test.weatherapplication.utils.DateUtils" />
+        <import type="com.test.weatherassignment.utils.DateUtils" />
 
 
         <variable
             name="item"
-            type="com.test.weatherapplication.network.response.WeatherResponseObject" />
+            type="com.test.weatherassignment.network.response.WeatherResponseObject" />
     </data>
 
 

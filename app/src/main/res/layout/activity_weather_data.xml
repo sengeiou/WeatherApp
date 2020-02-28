@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.test.weatherapplication.viewmodel.WeatherDataViewModel" />
+            type="com.test.weatherassignment.viewmodel.WeatherDataViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

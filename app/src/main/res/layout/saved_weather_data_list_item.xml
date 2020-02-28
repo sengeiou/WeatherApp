@@ -5,12 +5,12 @@
 
     <data>
 
-        <import type="com.test.weatherapplication.utils.DateUtils" />
+        <import type="com.test.weatherassignment.utils.DateUtils" />
 
 
         <variable
             name="item"
-            type="com.test.weatherapplication.viewmodel.WeatherDataSummaryItem" />
+            type="com.test.weatherassignment.viewmodel.WeatherDataSummaryItem" />
     </data>
 
 
