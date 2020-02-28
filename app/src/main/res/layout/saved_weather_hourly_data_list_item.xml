@@ -47,22 +47,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"
-                android:text="@{@string/date_created_label(DateUtils.formatDateString(item.dt_txt))}"
+                android:text="@{@string/date_created_label(item.dt_txt)}"
                 card_view:layout_constraintStart_toStartOf="@+id/textViewTemp"
                 card_view:layout_constraintTop_toBottomOf="@+id/textViewTemp"
                 tools:text="Date :" />
-
             <TextView
-                android:id="@+id/textViewMoreDetails"
+                android:id="@+id/textViewFeelsLike"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@{@string/more_details_label}"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                tools:text="More Details" />
+                android:paddingTop="8dp"
+                android:text="@{@string/humidity_label(item.main.humidity)}"
+                card_view:layout_constraintStart_toStartOf="@+id/textViewDate"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewDate"
+                tools:text="Date :" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
