@@ -59,11 +59,11 @@ class WeatherDataActivity : AppCompatActivity() {
     }
 
     fun getWeatherData(view: View) {
-        binding.vm?.weatherDataProcessor?.getWeatherData("141003",binding.vm?.weatherDataListener!!)
+        binding.vm?.weatherDataProcessor?.getWeatherData(et_zipcode.text.toString(),binding.vm?.weatherDataListener!!)
         //binding.vm?.weatherDataProcessor?.getHourlyWeatherData("141003",binding.vm?.weatherDataListener!!)
     }
     fun getHourlyList(){
-        binding.vm?.weatherDataProcessor?.getHourlyWeatherData("141003",
+        binding.vm?.weatherDataProcessor?.getHourlyWeatherData(et_zipcode.text.toString(),
             binding.vm?.weatherDataHourlyListener!!)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
