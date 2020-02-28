@@ -14,6 +14,6 @@
     <string name="action_save">Current Weather</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_clear_all">Clean</string>
-    <string name="click_to_getweatherdata_label">Click to GetWeatherData</string>
+    <string name="click_to_getweatherdata_label">Get Weather</string>
     <string name="action_hourly_list">Hourly List</string>
 </resources>
