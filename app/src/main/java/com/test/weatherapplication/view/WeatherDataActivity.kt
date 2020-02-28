@@ -34,6 +34,8 @@ class WeatherDataActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_save -> {
+                binding.vm?.weatherDataProcessor?.clearWeatherData()
+                binding.vm?.db?.deleteAllData()
                 recyclerView.visibility = View.VISIBLE
                 recyclerViewHourly.visibility = View.GONE
                 progressBar.visibility = View.GONE
@@ -41,6 +43,8 @@ class WeatherDataActivity : AppCompatActivity() {
                 true
             }
             R.id.action_hourly_list -> {
+                binding.vm?.weatherDataProcessor?.clearWeatherData()
+                binding.vm?.db?.deleteAllData()
                 recyclerView.visibility = View.GONE
                 recyclerViewHourly.visibility = View.VISIBLE
                 progressBar.visibility = View.GONE
