@@ -34,6 +34,10 @@ class WeatherDataActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_save -> {
+                recyclerView.visibility = View.VISIBLE
+                recyclerViewHourly.visibility = View.GONE
+                progressBar.visibility = View.GONE
+                textViewAdd.visibility = View.GONE
                 getWeatherData(binding.root)
                 true
             }
@@ -55,7 +59,7 @@ class WeatherDataActivity : AppCompatActivity() {
     }
 
     fun getWeatherData(view: View) {
-        //binding.vm?.weatherDataProcessor?.getWeatherData("141003",binding.vm?.weatherDataListener!!)
+        binding.vm?.weatherDataProcessor?.getWeatherData("141003",binding.vm?.weatherDataListener!!)
         //binding.vm?.weatherDataProcessor?.getHourlyWeatherData("141003",binding.vm?.weatherDataListener!!)
     }
     fun getHourlyList(){
@@ -83,8 +87,11 @@ class WeatherDataActivity : AppCompatActivity() {
                 textViewAdd.visibility = View.GONE
                 adapter.updateList(it)
             } else {
-                if (progressBar.visibility != View.VISIBLE)
+                if (progressBar.visibility != View.VISIBLE) {
                     textViewAdd.visibility = View.VISIBLE
+                    recyclerViewHourly.visibility = View.GONE
+                    recyclerView.visibility = View.GONE
+                }
                 adapter.updateList(it)
             }
         })

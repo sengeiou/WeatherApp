@@ -10,7 +10,7 @@
     <string name="remove_label">Remove</string>
     <string name="more_details_label">More Details</string>
 
-    <string name="action_save">Save</string>
+    <string name="action_save">Current Weather</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_clear_all">Clean</string>
     <string name="click_to_getweatherdata_label">Click to GetWeatherData</string>

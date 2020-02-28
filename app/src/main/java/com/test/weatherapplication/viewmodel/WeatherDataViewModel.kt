@@ -36,7 +36,7 @@ class WeatherDataViewModel @JvmOverloads constructor(app: Application, val weath
     override fun onSuccess(weatherData: WeatherData) {
         weatherDataProcessor.saveWeatherData(weatherData)
         updateOutputs(weatherData)
-        db.insertData(weatherData)
+        //db.insertData(weatherData)
     }
 
     fun updateOutputs(wd: WeatherData) {
