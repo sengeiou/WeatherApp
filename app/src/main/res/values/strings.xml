@@ -4,6 +4,7 @@
     <string name="temperature_label">Temperature: %s</string>
     <string name="date_label">Date Created: %s</string>
     <string name="date_created_label">Date: %s</string>
+    <string name="humidity_label">Humidity: %s</string>
     <string name="country_label">Country: %s</string>
     <string name="city_name_label">City: %s</string>
     <string name="description_label">Description: %s</string>
